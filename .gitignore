@@ -1,0 +1,122 @@
+# ==============================================
+# 🐍 PYTHON / FLASK / PYLINT / PYTEST
+# ==============================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches y configuraciones de linters o testing
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+reports/
+
+# ==============================================
+# 🧪 ENTORNOS VIRTUALES / DEPENDENCIAS
+# ==============================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+*.env
+Pipfile.lock
+poetry.lock
+
+# ==============================================
+# 🧱 FLASK / DJANGO / WEB
+# ==============================================
+instance/
+*.db
+*.sqlite3
+*.sqlite
+*.log
+logs/
+temp/
+uploads/
+__debug__/
+.env.development
+.env.production
+.env.testing
+
+# Archivos de configuración local de Flask
+config.pyc
+app/__pycache__/
+wsgi.pyc
+
+# ==============================================
+# 💾 BASE DE DATOS / MIGRACIONES
+# ==============================================
+*.db-journal
+*.sql
+*.bak
+migrations/
+alembic.ini
+alembic/
+*.sqlitedb
+
+# ==============================================
+# 🧰 IDEs Y EDITORES
+# ==============================================
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# VSCode
+.vscode/
+.history/
+.code-workspace
+
+# Otros editores
+*.sublime-project
+*.sublime-workspace
+
+# ==============================================
+# 📦 SISTEMAS OPERATIVOS
+# ==============================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==============================================
+# 🧪 DOCUMENTACIÓN / EXPORTS / TEMPORALES
+# ==============================================
+docs/*.tmp
+docs/*.bak
+*.docx~
+*.pdf~
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ==============================================
+# 🧠 PERSONALIZADO DEL PROYECTO TURNERO MÉDICO
+# ==============================================
+# Archivos del entorno local
+turnero.sqlite3
+turnero.db
+# Backups de la base
+backup_*.sqlite3
+# Configuraciones de prueba
+tests/tmp/
+tmp/
