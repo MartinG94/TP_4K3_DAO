@@ -5,7 +5,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Caches y configuraciones de linters o testing
+# Cachés y configuraciones de linters o testing
 .pytest_cache/
 .coverage
 .coverage.*
@@ -37,7 +37,7 @@ Pipfile.lock
 poetry.lock
 
 # ==============================================
-# 🧱 FLASK / DJANGO / WEB
+# 🧱 FLASK / BACKEND / SQLITE
 # ==============================================
 instance/
 *.db
@@ -67,6 +67,27 @@ migrations/
 alembic.ini
 alembic/
 *.sqlitedb
+backup_*.sqlite3
+
+# ==============================================
+# ⚛️ FRONTEND / REACT / VITE
+# ==============================================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/.eslintcache
+
+# Archivos de lock que se regeneran automáticamente
+frontend/package-lock.json
+frontend/yarn.lock
+frontend/pnpm-lock.yaml
 
 # ==============================================
 # 🧰 IDEs Y EDITORES
@@ -80,7 +101,7 @@ out/
 # VSCode
 .vscode/
 .history/
-.code-workspace
+*.code-workspace
 
 # Otros editores
 *.sublime-project
@@ -115,8 +136,9 @@ docs/*.bak
 # Archivos del entorno local
 turnero.sqlite3
 turnero.db
-# Backups de la base
-backup_*.sqlite3
-# Configuraciones de prueba
 tests/tmp/
 tmp/
+
+# Logs y cachés adicionales
+backend/*.log
+frontend/*.log
