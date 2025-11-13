@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Flask Backend",
+      "type": "python",
+      "request": "launch",
+      "program": "manage.py",
+      "args": ["run"],
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Run Frontend (Vite)",
+      "type": "pwa-node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "console": "integratedTerminal"
+    }
+  ],
+  "compounds": [
+    { "name": "Run BOTH: Backend + Frontend",
+      "configurations": ["Run Flask Backend", "Run Frontend (Vite)"] }
+  ]
+}

@@ -39,8 +39,7 @@ poetry.lock
 # ==============================================
 # 🧱 FLASK / BACKEND / SQLITE
 # ==============================================
-instance/
-*.db
+
 *.sqlite3
 *.sqlite
 *.log
@@ -99,7 +98,6 @@ frontend/pnpm-lock.yaml
 out/
 
 # VSCode
-.vscode/
 .history/
 *.code-workspace
 
